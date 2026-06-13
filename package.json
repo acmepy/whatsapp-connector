@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-connector",
+  "version": "1.0.0",
+  "description": "Librería Node.js reutilizable para conectarse a WhatsApp mediante adapters.",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "keywords": [
+    "whatsapp",
+    "connector",
+    "adapter",
+    "whatsapp-web.js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "whatsapp-web.js": "^1.34.7"
+  }
+}
