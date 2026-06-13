@@ -267,9 +267,26 @@ Ejecutar tests en modo watch:
 npm run test:watch
 ```
 
+## Ejemplos
+
+Ejecutar el ejemplo interactivo de consola:
+
+```bash
+node examples/console.js
+```
+
+Tambien podes indicar un `sessionId` personalizado:
+
+```bash
+node examples/console.js empresa-1
+```
+
+El ejemplo renderiza el QR directamente en consola, escucha cambios de estado y permite enviar texto, imagenes, PDFs y ubicaciones con comandos interactivos.
+
 ## Estructura
 
 ```text
+examples/       Ejemplos ejecutables
 src/
   adapters/      Adapters concretos, incluido wwebjs
   core/          Connector, sesiones, manager y base adapter
